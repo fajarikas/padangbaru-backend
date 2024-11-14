@@ -17,7 +17,7 @@ class FilamentServiceProvider extends ServiceProvider
         Filament::serving(function () {
             Filament::registerRenderHook(
                 'head.start',
-                fn() => '<meta name="csrf-token" content="' . csrf_token() . '">'
+                fn() => '<meta name="csrf-token" value="' . csrf_token() . '">'
             );
         });
     }
