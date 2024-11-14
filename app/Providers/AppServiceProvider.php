@@ -19,11 +19,5 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
-    {
-
-        Filament::pushMeta([
-            new HtmlString('<meta name="csrf_token" value="{{ csrf_token() }}"/>'),
-        ]);
-    }
+    public function boot(): void {}
 }
