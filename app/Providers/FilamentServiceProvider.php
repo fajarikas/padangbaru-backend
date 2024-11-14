@@ -14,12 +14,12 @@ class FilamentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Filament::serving(function () {
-            Filament::registerRenderHook(
-                'head.start',
-                fn() => '<meta name="csrf-token" value="' . csrf_token() . '">'
-            );
-        });
+        // Filament::serving(function () {
+        //     Filament::registerRenderHook(
+        //         'head.start',
+        //         fn() => '<meta name="csrf-token" value="' . csrf_token() . '">'
+        //     );
+        // });
     }
 
     /**
